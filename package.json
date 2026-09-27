@@ -1,0 +1,17 @@
+{
+  "name": "web-monitor",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Theo dõi trạng thái và nội dung website định kỳ",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

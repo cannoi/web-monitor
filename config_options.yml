@@ -1,0 +1,7 @@
+title: "Web Monitor"
+eyebrow: SoloHost App
+description: "Tạo cho tôi ứng dụng: Web Monitor ứng dụng theo dõi website và thông báo khi nội dung hoặc trạng thái website thay đổi."
+footer_hint: Ready to run on Pi Desktop SoloHost.
+output_file: .env
+after_save: Saved. Start the app from SoloHost.
+fields: []

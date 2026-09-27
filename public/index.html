@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Web Monitor</title><link rel="stylesheet" href="/style.css"><style>.paf-made-by{position:fixed;right:8px;bottom:8px;width:min(72px,12vw);max-width:12vw;height:auto;object-fit:contain;opacity:.5;background:transparent;padding:0;border:0;box-shadow:none;filter:none;pointer-events:none;z-index:30}</style></head>
+<body>
+<main class="shell">
+  <header><div><p class="eyebrow">WEB MONITOR</p><h1>Theo dõi website</h1><p class="sub">Kiểm tra trạng thái và nội dung thay đổi mỗi 15 phút.</p></div><span class="pill" id="health">Đang kết nối…</span></header>
+  <section class="toolbar"><h2>Monitor đang theo dõi</h2><button id="refresh">Kiểm tra tất cả</button></section>
+  <section id="list" class="grid"></section>
+  <section class="empty" id="empty"><div class="icon">◎</div><h2>Chưa có monitor</h2><p>Thêm website đầu tiên để bắt đầu theo dõi.</p><button id="addFirst">Thêm website</button></section>
+</main>
+<dialog id="dialog"><form method="dialog" id="form"><div class="dialog-head"><h2 id="dialogTitle">Thêm website</h2><button value="cancel" class="close">×</button></div><input type="hidden" id="editId"><label>Tên<input id="name" required maxlength="120" placeholder="Trang chủ công ty"></label><label>URL<input id="url" type="url" required placeholder="https://example.com"></label><label>Chu kỳ kiểm tra (phút)<input id="interval" type="number" min="15" max="1440" value="15"></label><p class="hint">Tối thiểu 15 phút. Ứng dụng kiểm tra an toàn, không truy cập mạng nội bộ.</p><div class="actions"><button value="cancel">Hủy</button><button value="default" id="save">Lưu monitor</button></div><p class="error" id="error"></p></form></dialog>
+
+<script src="/app.js"></script>
+<img class="paf-made-by" src="/made-by.png" alt="Made with App Builder — Pi SoloHost"></body></html>
